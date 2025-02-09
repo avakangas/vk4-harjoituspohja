@@ -1,0 +1,170 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 16px;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h3 {
+  border-bottom: 1px solid rgb(255, 105, 180); /* Pinkki */
+}
+
+a {
+  font-weight: 500;
+  color: #ff64be;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #f253b8;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #ff69b4; /* Pinkki */
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #ff69b4; /* Pinkki */
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+button.del, button.check, button.update {
+  padding: 0.3rem 0.6rem;
+  margin: 0;
+}
+
+button.update {
+  background-color: #ffb6c148; /* Vaalea pinkki */
+}
+
+button.del {
+  background-color: #ff6b6b48; /* Vaalea punertava */
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  background-color: #ff69b4; /* Pinkki */
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #ffe0f0; /* Vaaleanpunainen */
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #ff69b4; /* Pinkki */
+}
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #ff69b4; /* Pinkki */
+}
+
+.styled-table tbody tr:hover {
+  background-color: #ffb6c1; /* Vaaleampi pinkki */
+  cursor: pointer;
+}
+
+.forms {
+  display: flex;
+  gap: 30px;
+}
+
+form {
+  background-color: #ff69b4; /* Pinkki */
+  color: #ffffff;
+  padding: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  width: 300px;
+  font-size: 0.9em;
+  font-family: sans-serif;
+}
+
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+pre {
+  background-color: #ffe0f0; /* Vaaleanpunainen */
+}
+
+@media screen and (max-width: 800px) {
+  .forms {
+    flex-direction: column;
+  }
+}
