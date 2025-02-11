@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,6 +16,8 @@
       <p>
         Hae kaikki items tiedot omasta backendistä ja printtaa tulos konsoliin
       </p>
+
+      <ul class="testlist"></ul>
 
       <pre>GET http://localhost:3000/api/items </pre>
       <button class="get_items">Get all items</button>
@@ -79,7 +82,7 @@
                 <th>ID</th>
               </tr>
             </thead>
-            <tbody class="tbody">
+            <tbody id="taulukko" class="tbody">
               <!-- tänne haetaan kaikki käyttäjät -->
               <!-- # Get all users -->
               <!-- GET http://127.0.0.1:3000/api/users -->
